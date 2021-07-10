@@ -21,7 +21,7 @@ export class DashboardComponent implements OnInit {
   brands: Brand[] = [];
   showTable = false
   contextLovData = [];
-  contextVal = "";
+  contextVal:any;
 
   ngOnInit() {
     this.DashboardService.getSetupContext().subscribe(
@@ -38,7 +38,9 @@ export class DashboardComponent implements OnInit {
   columnsToDisplay: string[] = ['ContextName', 'ContextType'];
 
 
-  onContextChange() {
+  onContextChange(newValue:any) {
+    console.log(JSON.stringify(newValue));
+    //this.contextVal = newValue
     console.log('Context changed...' + this.contextVal);
     let contextInfo = getHeader(this.contextLovData, this.contextVal)
     let headerList =  contextInfo['columns'];

@@ -11,9 +11,9 @@ export class DashboardService {
   constructor(private httpclient:HttpClient) {}
 
   getSetupContext():Observable<any>{
-    return this.httpclient.get("http://wcidev:9001/ecouiapservices/rest/1/setupcontextvoapi")
+    return this.httpclient.get("http://wcidev:9001/ecouiapmodelservices/rest/1/setupcontextvoapi")
   }  
   getTableDetails(voname:string):Observable<any>{
-    return this.httpclient.get("http://wcidev:9001/ecouiapservices/rest/1/"+voname)
+    return this.httpclient.get("http://wcidev:9001/ecouiapmodelservices/rest/1/"+voname)
   }  
 }

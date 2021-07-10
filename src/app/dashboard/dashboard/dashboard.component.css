@@ -1,5 +1,5 @@
 .mat-select{
-    width: 500px !important;
+    width: 1000px !important;
     border: solid 1px rgba(101,115,126,0.5);
     padding:10px;
 }
@@ -13,3 +13,8 @@ table {
 .mat-header-cell {
     color: white!important;
 }
+
+oj-header-border {
+    border: solid var(--oj-core-divider-color);
+    border-width: 0 0 1px;
+    padding: 0 0 7px; }

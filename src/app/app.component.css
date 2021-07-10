@@ -7,6 +7,9 @@
   .header{
     margin-right: 23%;
   }
+  body {
+    background-color:#FBF9F8;
+  }
   .example-button-row .Active{
     color: white !important;
     background: #309fdb;
@@ -74,7 +77,7 @@
 
   .content {
     display: flex;
-    margin: 82px auto 32px;
+    margin: 38px auto 32px;
     padding: 0 16px;
     max-width: 960px;
     flex-direction: column;

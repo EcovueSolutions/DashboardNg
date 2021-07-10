@@ -6,6 +6,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MaterialModule} from '../material/material.module';
 import { DashboardService } from './dashboard.service';
+import { FormsModule } from '@angular/forms'; 
 
 
 
@@ -18,7 +19,8 @@ import { DashboardService } from './dashboard.service';
     CommonModule,
     DashboardRoutingModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers:[DashboardService]
 })
